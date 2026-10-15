@@ -1,0 +1,8 @@
+{
+  "name": "CareLink",
+  "short_name": "CareLink",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#F4F7F5",
+  "theme_color": "#F4F7F5"
+}
