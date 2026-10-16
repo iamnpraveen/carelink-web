@@ -4,7 +4,7 @@ if (window.top !== window.self) {
   try { window.top.location = window.self.location } catch (e) { /* cross-origin parent: the page stays hidden */ }
 }
 
-// Invitation links on a phone: open the CareLink app if it is installed; if not, go to the store (when a store link is set in
+// Invitation links on a phone: open the Silverconomy app if it is installed; if not, go to the store (when a store link is set in
 // store-links.js), otherwise carry on here in the web app. On a computer the web app simply opens.
 (function () {
   var hash = window.location.hash || ''
