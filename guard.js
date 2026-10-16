@@ -17,10 +17,10 @@ if (window.top !== window.self) {
   var web = window.location.origin + window.location.pathname + '?web=1' + hash
   if (android) {
     var fallback = stores.android || web
-    window.location.replace('intent://join' + hash + '#Intent;scheme=carelink;package=com.moolya.carelink;S.browser_fallback_url=' + encodeURIComponent(fallback) + ';end')
+    window.location.replace('intent://join' + hash + '#Intent;scheme=silverconomy;package=com.moolya.silverconomy;S.browser_fallback_url=' + encodeURIComponent(fallback) + ';end')
   } else {
     var started = Date.now()
-    window.location.href = 'carelink://join' + hash
+    window.location.href = 'silverconomy://join' + hash
     setTimeout(function () { if (!document.hidden && Date.now() - started < 3000) window.location.replace(stores.ios || web) }, 1500)
   }
 })()
