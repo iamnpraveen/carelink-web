@@ -6,7 +6,7 @@
   <!-- Only this site, the CareLink backend and nothing else may load or be contacted (see also _headers for real response headers). -->
   <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'wasm-unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self' https://kncyiaxbyfthobvfwugf.supabase.co wss://kncyiaxbyfthobvfwugf.supabase.co; manifest-src 'self'; worker-src 'self' blob:; base-uri 'none'; form-action 'none'; object-src 'none'">
   <meta name="referrer" content="no-referrer">
-  <meta name="theme-color" content="#0F5E57">
+  <meta name="theme-color" content="#2E6B3A">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="robots" content="noindex, nofollow">
   <link rel="manifest" href="manifest.webmanifest">
@@ -14,9 +14,10 @@
   <link rel="apple-touch-icon" href="logo.svg">
   <title>CareLink</title>
   <style>
-    html, body { margin: 0; height: 100%; background: #0F5E57; overflow: hidden; }
+    html, body { margin: 0; height: 100%; background: #2E6B3A; overflow: hidden; }
     #boot { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; font: 600 24px Georgia, serif; color: #fff; }
   </style>
+  <script src="store-links.js"></script>
   <script src="guard.js"></script>
   <script type="module" src="carelink.js"></script>
 </head>
