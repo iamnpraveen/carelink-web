@@ -3,7 +3,7 @@
   "short_name": "CareLink",
   "start_url": ".",
   "display": "standalone",
-  "background_color": "#F4F7F5",
-  "theme_color": "#F4F7F5",
+  "background_color": "#0F5E57",
+  "theme_color": "#0F5E57",
   "icons": [{ "src": "logo.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
 }

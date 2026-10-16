@@ -3,17 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#F4F7F5">
+  <!-- Only this site, the CareLink backend and nothing else may load or be contacted (see also _headers for real response headers). -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'wasm-unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self' https://kncyiaxbyfthobvfwugf.supabase.co; manifest-src 'self'; worker-src 'self' blob:; base-uri 'none'; form-action 'none'; object-src 'none'">
+  <meta name="referrer" content="no-referrer">
+  <meta name="theme-color" content="#0F5E57">
   <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="robots" content="noindex, nofollow">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="icon" type="image/svg+xml" href="logo.svg">
   <link rel="apple-touch-icon" href="logo.svg">
   <title>CareLink</title>
   <style>
-    html, body { margin: 0; height: 100%; background: #F4F7F5; overflow: hidden; }
-    #boot { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; font: 600 20px system-ui, sans-serif; color: #263A3D; }
+    html, body { margin: 0; height: 100%; background: #0F5E57; overflow: hidden; }
+    #boot { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; font: 600 24px Georgia, serif; color: #fff; }
   </style>
+  <script src="guard.js"></script>
   <script type="module" src="carelink.js"></script>
 </head>
-<body><div id="boot"><div style="text-align:center"><img src="logo.svg" width="88" height="88" alt="" style="display:block;margin:0 auto 14px"><div>CareLink</div></div></div></body>
+<body><div id="boot"><div style="text-align:center"><img src="logo.svg" width="88" height="88" alt="" style="display:block;margin:0 auto 14px"><div>Welcome</div></div></div></body>
 </html>
